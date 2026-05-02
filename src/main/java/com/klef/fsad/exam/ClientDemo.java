@@ -15,20 +15,16 @@ public class ClientDemo
         SessionFactory sf = cfg.buildSessionFactory();
         Session s = sf.openSession();
         Transaction tx = s.beginTransaction();
-
-        // I. Insert
         Inventory obj = new Inventory();
         obj.setName("Laptop");
-        obj.setDescription("Dell i5");
+        obj.setDescription("Processor I5");
         obj.setDate(new Date());
         obj.setStatus("Available");
 
         s.save(obj);
 
         System.out.println("Inserted Successfully");
-
-        // II. Delete (by ID)
-        int deleteId = obj.getId(); // deleting same inserted
+        int deleteId = obj.getId(); 
 
         Inventory delObj = s.get(Inventory.class, deleteId);
         if(delObj != null)

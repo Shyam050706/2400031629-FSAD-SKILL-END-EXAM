@@ -2,9 +2,7 @@ package com.klef.fsad.exam;
 
 import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
-
 import java.util.Date;
-
 public class ClientDemo 
 {
     public static void main(String[] args) 

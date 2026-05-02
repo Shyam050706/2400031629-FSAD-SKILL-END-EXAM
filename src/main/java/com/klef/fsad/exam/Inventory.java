@@ -10,7 +10,6 @@ public class Inventory
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     private String name;
     private String description;
 
@@ -18,8 +17,6 @@ public class Inventory
     private Date date;
 
     private String status;
-
-    // getters and setters
 
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
